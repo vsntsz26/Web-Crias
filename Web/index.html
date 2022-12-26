@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- web crias -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Web Crias</title>
+</head>
+<body>
+
+    <nav>
+        {% if session.user_id %}
+        <ul>
+            <li><a href="#">membros</a>
+                <ul>
+                    <li><a href="#">caetano</a></li>
+                    <li><a href="#">vinicius</a></li>
+                    <li><a href="#">gabriel</a></li>
+                    <li><a href="#">fernando</a></li>
+                    <li><a href="#">nicolas</a></li>
+                    <li><a href="#">flavio</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ranking</a></li>
+            <li><a href="/roleta">roleta</a></li>
+            <li><a href="/perolas">perolas</a></li>
+            <li><a href="/login">login</a></li>
+        </ul>
+        {% else %}
+        <ul>
+            <li><a href="#">membros</a>
+                <ul>
+                    <li><a href="#">caetano</a></li>
+                    <li><a href="#">vinicius</a></li>
+                    <li><a href="#">gabriel</a></li>
+                    <li><a href="#">fernando</a></li>
+                    <li><a href="#">nicolas</a></li>
+                    <li><a href="#">flavio</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ranking</a></li>
+            <li><a href="/roleta">roleta</a></li>
+            <li><a href="/perolas">perolas</a></li>
+            <li><a href="/login">login</a></li>
+        </ul>
+        {% endif %}
+    </nav>
+
+</body>
+</html>
